@@ -14,7 +14,7 @@ ANSI_WHITE = "\u001B[37m"
 
 
 def intro():
-    print(f'{ANSI_RED} yabba dabba {ANSI_RESET})
+    print(f'{ANSI_RED} yabba dabba {ANSI_RESET}')
 
 def santa_room():
     # ....
