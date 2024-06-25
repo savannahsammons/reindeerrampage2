@@ -13,8 +13,11 @@ ANSI_CYAN = "\u001B[36m"
 ANSI_WHITE = "\u001B[37m"
 
 
-def intro():
-    print(f'{ANSI_RED} yabba dabba {ANSI_RESET}')
+def title_screen():
+    print(f'{ANSI_RED}  ______ _______ _____ __   _ ______  _______ _______  ______       ______ _______ _______  _____  _______  ______ _______')
+    print(f' |_____/ |______   |   | \\  | |     \\ |______ |______ |_____/      |_____/ |_____| |  |  | |_____] |_____| |  ____ |______')
+    print(f' |    \\_ |______ __|__ |  \\_| |_____/ |______ |______ |    \\_      |    \\_ |     | |  |  | |       |     | |_____| |______{ANSI_RESET}')
+    
 
 def santa_room():
     # ....
@@ -26,3 +29,6 @@ def workshop():
 
 def stables():
     something = 0
+
+def intro():
+    
