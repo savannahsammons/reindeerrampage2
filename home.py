@@ -33,7 +33,7 @@ box_speed = 5
 bullet_size = 20
 bullet_x = -screen_width
 bullet_y = screen_height // 2 - bullet_size // 2
-bullet_speed = 10
+bullet_speed = 5
 
 # Main game loop
 running = True
@@ -77,7 +77,7 @@ while running:
     
     # GAME
 
-    if bullet_x == box_x or bullet_y == box_y:
+    if bullet_x == box_x and bullet_y == box_y:
         box_size = 0
         break
 
@@ -92,3 +92,6 @@ while running:
 pygame.quit()
 sys.exit()
 
+
+
+print('yay')
