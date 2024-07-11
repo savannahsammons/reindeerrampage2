@@ -63,8 +63,8 @@ while running:
     box_y = max(0, min(box_y, screen_height - box_size))
 
     # bullet boundaries
-    bullet_x = max(0, min(bullet_x, screen_width - bullet_size))
-    bullet_y = max(0, min(bullet_y, screen_height - bullet_size))
+    bullet_x = max(0, min(bullet_x, screen_width))
+    bullet_y = max(0, min(bullet_y, screen_height))
     
     # Fill the screen with white color
     screen.fill(white)
@@ -77,7 +77,7 @@ while running:
     
     # GAME
 
-    if bullet_x == box_x and bullet_y == box_y:
+    if bullet_x == box_x or bullet_y == box_y:
         box_size = 0
         break
 
